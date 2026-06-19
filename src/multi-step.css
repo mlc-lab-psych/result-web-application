@@ -1,0 +1,478 @@
+.multistep-wrapper {
+    background: var(--white);
+    border-radius: 12px;
+    width: 100%;
+    margin: 0 auto var(--spacing-4xl) auto;
+    overflow: hidden;
+}
+
+.multistep-header {
+    padding: var(--spacing-lg) var(--spacing-xl);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.multistep-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.multistep-experiment-tag {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--orange);
+    background: rgba(247, 105, 2, 0.08);
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.multistep-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--grey-mid);
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: 0.2s ease;
+    font-family: var(--font-body);
+}
+
+.multistep-close:hover {
+    background: var(--grey-light);
+    color: var(--black);
+}
+
+.multistep-progress-bar {
+    width: 100%;
+    height: 4px;
+    background: var(--grey-light);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: var(--spacing-xs);
+}
+
+.multistep-progress-fill {
+    height: 100%;
+    background: var(--orange);
+    border-radius: 4px;
+    transition: width 0.4s ease;
+}
+
+.multistep-step-count {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    color: var(--grey-mid);
+    font-weight: 400;
+}
+
+.multistep-body {
+    padding: var(--spacing-xl) var(--spacing-xl);
+}
+
+.multistep-title {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 0 0 var(--spacing-xs) 0;
+    color: var(--black);
+    letter-spacing: -0.5px;
+}
+
+.multistep-content {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--grey-mid);
+    margin: 0 0 var(--spacing-xl) 0;
+    line-height: 1.6;
+}
+
+.multistep-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.multistep-dynamic-label {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--black);
+    margin-top: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--grey-light);
+}
+
+.multistep-input-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.multistep-label {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--black);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.multistep-input {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: var(--font-body);
+    font-weight: 300;
+    background: var(--grey-bg);
+    outline: none;
+    transition: 0.2s ease;
+    width: 100%;
+    color: var(--black);
+}
+
+.multistep-input:focus {
+    border-color: var(--orange);
+    background: var(--white);
+    box-shadow: 0 0 0 3px rgba(247, 105, 2, 0.1);
+}
+
+.multistep-input::placeholder {
+    color: #bbb;
+    font-weight: 300;
+}
+
+.multistep-download-area {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+.multistep-file-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.multistep-file-item {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 400;
+    background: var(--grey-bg);
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: #444;
+    border: 1px solid var(--grey-light);
+}
+
+.multistep-download-btn {
+    background: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+    align-self: flex-start;
+}
+
+.multistep-download-btn:hover:not(:disabled) {
+    background: var(--orange-light);
+    transform: translateY(-2px);
+}
+
+.multistep-download-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.multistep-download-btn.downloaded {
+    background: #2e7d32;
+}
+
+.multistep-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-lg) var(--spacing-xl);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    gap: var(--spacing-sm);
+}
+
+.multistep-btn-back,
+.multistep-btn-next {
+    padding: var(--spacing-sm) var(--spacing-xl);
+    border-radius: 6px;
+    border: none;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.multistep-btn-back {
+    background: var(--grey-bg);
+    color: var(--grey-mid);
+    border: 1px solid var(--grey-light);
+    margin-right: auto;
+}
+
+.multistep-btn-back:hover {
+    background: var(--grey-light);
+    color: var(--black);
+}
+
+.multistep-btn-next {
+    background: var(--black);
+    color: var(--white);
+    margin-left: auto;
+}
+
+.multistep-btn-next:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+/* =====================
+   AIRTABLE BASES BUILDER
+   ===================== */
+
+.airtable-bases-builder {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+}
+
+.airtable-base-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: var(--spacing-lg);
+    background: var(--grey-bg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    transition: box-shadow 0.2s ease;
+}
+
+.airtable-base-card:focus-within {
+    box-shadow: 0 0 0 2px rgba(247, 105, 2, 0.15);
+    border-color: rgba(247, 105, 2, 0.3);
+}
+
+.airtable-base-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.airtable-base-label {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: var(--black);
+    font-weight: normal;
+}
+
+.airtable-remove-base-btn {
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    color: var(--grey-mid);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.airtable-remove-base-btn:hover {
+    background: #fee;
+    border-color: #e88;
+    color: #c00;
+}
+
+.airtable-tables-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.airtable-tables-heading {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--grey-mid);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+.airtable-slot-hint {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #aaa;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.airtable-slot-hint code {
+    background: rgba(0,0,0,0.05);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 0.68rem;
+    color: var(--orange);
+}
+
+.airtable-table-row {
+    display: flex;
+    align-items: flex-end;
+    gap: var(--spacing-sm);
+}
+
+.airtable-key-badge {
+    display: inline-block;
+    margin-left: var(--spacing-xs);
+    background: rgba(247, 105, 2, 0.08);
+    color: var(--orange);
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 3px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: monospace;
+    vertical-align: middle;
+}
+
+.airtable-remove-table-btn {
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    color: var(--grey-mid);
+    cursor: pointer;
+    transition: 0.2s ease;
+    flex-shrink: 0;
+    margin-bottom: 1px;
+}
+
+.airtable-remove-table-btn:hover {
+    background: #fee;
+    border-color: #e88;
+    color: #c00;
+}
+
+.airtable-add-table-btn {
+    background: none;
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 7px 14px;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--grey-mid);
+    cursor: pointer;
+    transition: 0.2s ease;
+    align-self: flex-start;
+    margin-top: 2px;
+}
+
+.airtable-add-table-btn:hover {
+    border-color: var(--orange);
+    color: var(--orange);
+    background: rgba(247, 105, 2, 0.04);
+}
+
+.airtable-add-base-btn {
+    background: none;
+    border: 1.5px dashed rgba(0, 0, 0, 0.18);
+    border-radius: 8px;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--grey-mid);
+    cursor: pointer;
+    transition: 0.2s ease;
+    text-align: center;
+}
+
+.airtable-add-base-btn:hover {
+    border-color: var(--orange);
+    color: var(--orange);
+    background: rgba(247, 105, 2, 0.03);
+}
+
+.airtable-summary {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    color: #aaa;
+    padding: var(--spacing-xs) 0;
+}
+
+.airtable-summary code {
+    background: rgba(0,0,0,0.05);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 0.72rem;
+    color: var(--orange);
+}
+
+@media (max-width: 768px) {
+    .multistep-wrapper {
+        border-radius: 8px;
+        margin-bottom: var(--spacing-2xl);
+    }
+
+    .multistep-body {
+        padding: var(--spacing-lg);
+    }
+
+    .multistep-header {
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    .multistep-nav {
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    .multistep-title {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .multistep-btn-back,
+    .multistep-btn-next {
+        padding: var(--spacing-sm) var(--spacing-lg);
+        font-size: 0.85rem;
+    }
+
+    .multistep-file-list {
+        gap: var(--spacing-xs);
+    }
+
+    .multistep-download-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
