@@ -41,48 +41,48 @@ export default function DataTable(props){
     }
 
     useEffect(() => {
-            const delay = 5000;
-            try {
-                let pathDB = 'users-new';
+            let pathDB = 'users-new';
 
-                if(props.sharedDB){
-                    if(props.session === 1){
-                        pathDB = 'users-new-session-1'
-                    }
-                    else if (props.session === 2){
-                        pathDB = 'users-new-session-2'
-                    }
-                    else if (props.session === 3){
-                        pathDB = 'users-new-reverse'
-                    }
+            if(props.sharedDB){
+                if(props.session === 1){
+                    pathDB = 'users-new-session-1'
                 }
-
-                const dbRef = ref(db, pathDB);
-                onValue(dbRef, async (snapshot) => {
-                    const raw_data = snapshot.val();
-                    if (raw_data) {
-                        console.log("Data fetched");
-                        setData(raw_data)
-                        retrieveHeaders(raw_data[Object.keys(raw_data)[0]])
-
-                        console.log(raw_data)
-
-                    } else {
-                        console.log("No data available");
-                    }
-                })
-
-            } catch (error) {
-                console.log("Error fetching data from Firebase.");
+                else if (props.session === 2){
+                    pathDB = 'users-new-session-2'
+                }
+                else if (props.session === 3){
+                    pathDB = 'users-new-reverse'
+                }
             }
 
-            const timer = setTimeout(() => {
-                setShowTable(true);
-            }, delay);
+            const url = "http://localhost:3000/firebase"
+            const payload = {
+                "name": db,
+                "url": props.url,
+                "reference": pathDB
+            }
 
-            return () => clearTimeout(timer);
+            console.log(payload)
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(response => {
+                if (!response.ok) throw new Error('Network error');
+                return response.json();
+            })
+            .then((data) => {
+                setData(data)
+                retrieveHeaders(data[Object.keys(data)[0]])
+                setShowTable(true);
+                console.log(data)
+            })
+            .catch(error => console.error('Error:', error));
         },
-        [])
+    [])
 
     const allResponses =  Object.entries(data).flatMap(([key, responses]) =>
         responses.map(r => ({ ...r, firebaseKey: key }))

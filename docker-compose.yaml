@@ -1,0 +1,10 @@
+services:
+  results-web-application:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: ResultsWebApplication
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env

@@ -111,14 +111,14 @@ function App() {
                   </div>
 
                   <div className={"experiments-carousal"}>
-                      <div onClick={()=>redirects("2b")} className={"experiment-blob"}>
+                      <div onClick={()=>navigate("/alive-2b")} className={"experiment-blob"}>
                           <img src={Icon} alt={"unDraw illustration"}/>
                           <span>
                               Alive 2b Experiment
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
-                      <div onClick={()=>redirects("3")} className={"experiment-blob"}>
+                      <div onClick={()=>navigate("/alive-3")} className={"experiment-blob"}>
                           <img src={Icon2} alt={"unDraw illustration"}/>
                           <span>
                               Alive 3 Experiment
