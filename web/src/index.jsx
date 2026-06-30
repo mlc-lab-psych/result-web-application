@@ -59,7 +59,7 @@ const router = createBrowserRouter([
         element: <ForgotPassword />
     },
 
-    ...routes.map(({ path, cred_file, url, audio, experimentName, sharedDB, session }) => ({
+    ...routes.map(({ path, cred_file, url, audio, experimentName, sharedDB, session, reference}) => ({
         path,
         element: (
         <ProtectedRoute>

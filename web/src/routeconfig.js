@@ -15,7 +15,7 @@ export const routes = [
     {path: "/iat-animals",                  cred_file: "iat_animals",                  url: "https://iat-plaart-default-rtdb.firebaseio.com/",              experimentName: "IAT Animals Experiment" },
     {path: "/iat-humans",                   cred_file: "iat_humans",                   url: "https://iat-humans-default-rtdb.firebaseio.com/",              experimentName: "IAT Humans Experiment" },
     {path: "/categorization-order",         cred_file: "categorization_order",         url: "https://categorization-orders-default-rtdb.firebaseio.com/",   experimentName: "Categorization Order" },
-    {path: "/categorization-order-reverse", cred_file: "categorization_order_reverse", url: "https://categorization-orders-default-rtdb.firebaseio.com/",   experimentName: "Categorization Order Reverse",                   reference="users-new-reverse"},
+    {path: "/categorization-order-reverse", cred_file: "categorization_order_reverse", url: "https://categorization-orders-default-rtdb.firebaseio.com/",   experimentName: "Categorization Order Reverse",                   reference:"users-new-reverse"},
     {path: "/alive-indiv-rep",              cred_file: "alive_indiv_rep",              url: "https://alive-indiv-rep-default-rtdb.firebaseio.com/",         experimentName: "Alive Indiv Rep",                                },
     {path: "/alive-indiv-rep-session-2",    cred_file: "alive_indiv_rep_session_2",    url: "https://iat-plaart-default-rtdb.firebaseio.com/",              experimentName: "Alive Indiv Rep Session 2",},
     {path: "/mlc-1048-animals",             cred_file: "mlc_1048"},
