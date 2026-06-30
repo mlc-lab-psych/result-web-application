@@ -43,7 +43,10 @@ export default function DataTable(props){
     useEffect(() => {
             let pathDB = 'users-new';
 
-            if(props.sharedDB){
+            if (props.reference) {
+                pathDB = props.reference
+
+            } else if (props.sharedDB) {
                 if(props.session === 1){
                     pathDB = 'users-new-session-1'
                 }
@@ -53,9 +56,9 @@ export default function DataTable(props){
                 else if (props.session === 3){
                     pathDB = 'users-new-reverse'
                 }
-            }
-
-            const url = "http://localhost:3000/firebase"
+            } 
+        
+            const url = "https://result-web-application.vercel.app//firebase"
             const payload = {
                 "name": db,
                 "url": props.url,

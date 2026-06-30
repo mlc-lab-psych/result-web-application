@@ -4,6 +4,7 @@
 
 internal/firebase/credentials/*
 !internal/firebase/credentials/test.json
+
 # Logs
 logs
 *.log
