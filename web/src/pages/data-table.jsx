@@ -58,7 +58,9 @@ export default function DataTable(props){
                 }
             } 
         
-            const url = "https://result-web-application.vercel.app//firebase"
+            const url = "https://result-web-application.vercel.app/firebase"
+            //const url = "http://localhost:3000/firebase"
+
             const payload = {
                 "name": db,
                 "url": props.url,

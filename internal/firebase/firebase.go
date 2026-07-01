@@ -21,7 +21,7 @@ import (
 var credFiles embed.FS
 
 func GetInfo(db *db.Client, request models.FirebaseRequest) (*any, error) {
-	ctx, cancel := context.WithTimeout(context.Background(), time.Second*10)
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second*20)
 	defer cancel()
 
 	users := db.NewRef(request.Reference)
@@ -29,7 +29,7 @@ func GetInfo(db *db.Client, request models.FirebaseRequest) (*any, error) {
 	var info *any
 	err := users.Get(ctx, &info)
 	if err != nil {
-		return nil, fmt.Errorf("Unable to get info for users!")
+		return nil, fmt.Errorf("Unable to get info for users!: %v", err)
 	}
 
 	return info, nil

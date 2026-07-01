@@ -45,5 +45,4 @@ func LoadFirebase(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, table)
-	return
 }
