@@ -263,19 +263,26 @@ function App() {
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
-                      <div onClick={()=>navigate("/iat-humans")} className={"experiment-blob"}>
+                        <div onClick={()=>navigate("/iat-humans")} className={"experiment-blob"}>
                           <img src={Icon} alt={"unDraw illustration"}/>
                           <span>
                               IAT Humans Experiment
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
-                      </div>
+                        </div>
                         <div onClick={()=>navigate("/mlc-1048-animals")} className={"experiment-blob"}>
                           <img src={Icon2} alt={"unDraw illustration"}/>
                           <span>
                               MLC-1048 Word Animals
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
+                      </div>
+                        <div onClick={()=>navigate("/mlc-1049")} className={"experiment-blob"}>
+                            <img src={Icon3} alt={"unDraw illustration"}/>
+                            <span>
+                                MLC-1049
+                                <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
+                            </span>
                       </div>
                   </div>
               </div>
