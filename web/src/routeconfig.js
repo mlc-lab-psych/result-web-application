@@ -22,3 +22,5 @@ export const routes = [
     {path: "/mlc-1048-animals",             cred_file: "mlc_1048",          url: "https://alive-5b7bc-default-rtdb.firebaseio.com/",            experimentName: "MLC 1048 Animals"},
     {path: "/mlc-1049",                     cred_file: "mlc_1048",          url: "https://alive-5b7bc-default-rtdb.firebaseio.com/",            experimentName: "MLC 1049",                                       reference:"mlc1049/results"}
 ];
+
+//for vercel
