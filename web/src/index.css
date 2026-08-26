@@ -180,7 +180,7 @@ header p {
 
 .experiment-blob {
   height: auto;
-  min-height: 300px;
+  min-height: 120px;
   padding: 34px;
   background: var(--white);
 }

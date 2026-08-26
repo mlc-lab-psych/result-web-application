@@ -140,42 +140,36 @@ function App() {
                           </span>
                       </div> */}
                       <div onClick={()=>navigate("/pilot-1")} className={"experiment-blob"}>
-                          <img src={Icon} alt={"unDraw illustration"}/>
                           <span>
                               Pilot 1 Session 1
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                       <div onClick={()=>navigate("/pilot-1-session-2")} className={"experiment-blob"}>
-                          <img src={Icon2} alt={"unDraw illustration"}/>
                           <span>
                               Pilot 1 Session 2
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                       <div onClick={()=>navigate("/alive-indiv-diff-1")} className={"experiment-blob"}>
-                          <img src={Icon3} alt={"unDraw illustration"}/>
                           <span>
                               Pilot Indiv Diff Session 1
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                       <div onClick={()=>navigate("/alive-indiv-diff-2")} className={"experiment-blob"}>
-                          <img src={Icon4} alt={"unDraw illustration"}/>
                           <span>
                               Pilot Indiv Diff Session 2
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                       <div onClick={()=>navigate("/alive-indiv-rep-session-1")} className={"experiment-blob"}>
-                          <img src={Icon} alt={"unDraw illustration"}/>
                           <span>
                               Alive Indiv Rep Session 1
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                       <div onClick={()=>navigate("/alive-indiv-rep-session-2")} className={"experiment-blob"}>
-                          <img src={Icon2} alt={"unDraw illustration"}/>
                           <span>
                               Alive Indiv Rep Session 2
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
@@ -194,91 +188,78 @@ function App() {
                   </div>
                   <div className={"experiments-carousal"}>
                       <div onClick={()=>navigate("/iat-anart")} className={"experiment-blob"}>
-                          <img src={Icon3} alt={"unDraw illustration"}/>
                           <span>
                               IAT Animal Artifact Experiment
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                       <div onClick={()=>navigate("/iat-hyuart")} className={"experiment-blob"}>
-                          <img src={Icon4} alt={"unDraw illustration"}/>
                           <span>
                               IAT Human Artifact Experiment
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                       <div onClick={()=>navigate("/iat-anpla")} className={"experiment-blob"}>
-                          <img src={Icon} alt={"unDraw illustration"}/>
                           <span>
                               IAT Animal Plant Experiment
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                       <div onClick={()=>navigate("/iat-plaart")} className={"experiment-blob"}>
-                          <img src={Icon2} alt={"unDraw illustration"}/>
                           <span>
                               IAT Plant Artifact Experiment
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                       <div onClick={()=>navigate("/iat-natveh")} className={"experiment-blob"}>
-                          <img src={Icon3} alt={"unDraw illustration"}/>
                           <span>
                               IAT Nature Vehicle Experiment
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                       <div onClick={()=>navigate("/iat-annat")} className={"experiment-blob"}>
-                          <img src={Icon4} alt={"unDraw illustration"}/>
                           <span>
                               IAT Animal Nature Experiment
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                       <div onClick={()=>navigate("/iat-natart")} className={"experiment-blob"}>
-                          <img src={Icon} alt={"unDraw illustration"}/>
                           <span>
                               IAT Nature Artifact Experiment
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                       <div onClick={()=>navigate("/iat-planat")} className={"experiment-blob"}>
-                          <img src={Icon2} alt={"unDraw illustration"}/>
                           <span>
                               IAT Plant Nature Experiment
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                       <div onClick={()=>navigate("/iat-plaveh")} className={"experiment-blob"}>
-                          <img src={Icon3} alt={"unDraw illustration"}/>
                           <span>
                               IAT Plant Vehicle Experiment
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                       <div onClick={()=>navigate("/iat-animals")} className={"experiment-blob"}>
-                          <img src={Icon4} alt={"unDraw illustration"}/>
                           <span>
                               IAT Animals Experiment
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                         <div onClick={()=>navigate("/iat-humans")} className={"experiment-blob"}>
-                          <img src={Icon} alt={"unDraw illustration"}/>
                           <span>
                               IAT Humans Experiment
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                         </div>
                         <div onClick={()=>navigate("/mlc-1048-animals")} className={"experiment-blob"}>
-                          <img src={Icon2} alt={"unDraw illustration"}/>
                           <span>
                               MLC-1048 Word Animals
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                         <div onClick={()=>navigate("/mlc-1049")} className={"experiment-blob"}>
-                            <img src={Icon3} alt={"unDraw illustration"}/>
                             <span>
                                 MLC-1049
                                 <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
@@ -296,14 +277,12 @@ function App() {
                   </div>
                   <div className={"experiments-carousal"}>
                       <div onClick={()=>redirects("categorization-order")} className={"experiment-blob"}>
-                          <img src={Icon} alt={"unDraw illustration"}/>
                           <span>
                               Categorization Order
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                           </span>
                       </div>
                       <div onClick={()=>redirects("categorization-order-reverse")} className={"experiment-blob"}>
-                          <img src={Icon2} alt={"unDraw illustration"}/>
                           <span>
                               Categorization Order Reverse
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
@@ -324,7 +303,6 @@ function App() {
                   </div>
                   <div className={"experiments-carousal"}>
                       <div onClick={()=>redirects("alignment-voice")} className={"experiment-blob"}>
-                          <img src={Icon4} alt={"unDraw illustration"}/>
                           <span>
                               Alignment Voice
                               <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
