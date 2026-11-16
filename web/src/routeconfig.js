@@ -20,7 +20,9 @@ export const routes = [
     {path: "/alive-indiv-rep-session-1",    cred_file: "indiv_rep",         url: "https://alive-indiv-rep-default-rtdb.firebaseio.com/",        experimentName: "Alive Indiv Rep Session 1",                      reference:"users-new-session-1"},
     {path: "/alive-indiv-rep-session-2",    cred_file: "indiv_rep",         url: "https://alive-indiv-rep-default-rtdb.firebaseio.com/",        experimentName: "Alive Indiv Rep Session 2",                      reference:"users-new-session-2"},
     {path: "/mlc-1048-animals",             cred_file: "mlc_1048",          url: "https://alive-5b7bc-default-rtdb.firebaseio.com/",            experimentName: "MLC 1048 Animals",                               reference:"users/new"},
-    {path: "/mlc-1049",                     cred_file: "mlc_1048",          url: "https://alive-5b7bc-default-rtdb.firebaseio.com/",            experimentName: "MLC 1049",                                       reference:"mlc1049/results"}
+    {path: "/mlc-1049",                     cred_file: "mlc_1048",          url: "https://alive-5b7bc-default-rtdb.firebaseio.com/",            experimentName: "MLC 1049",                                       reference:"mlc1049/results"},
+    {path: "/mlc-1051",                     cred_file: "mlc_1048",          url: "https://alive-5b7bc-default-rtdb.firebaseio.com/",            experimentName: "MLC 1051",                                       reference:"mlc1051/users/new"},
+    {path: "/mlc-1052",                     cred_file: "mlc_1048",          url: "https://alive-5b7bc-default-rtdb.firebaseio.com/",            experimentName: "MLC 1052",                                       reference:"mlc1052/users/new"}
 ];
 
 //for vercel

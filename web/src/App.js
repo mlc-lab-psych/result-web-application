@@ -264,7 +264,19 @@ function App() {
                                 MLC-1049
                                 <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
                             </span>
-                      </div>
+                        </div>
+                        <div onClick={()=>navigate("/mlc-1051")} className={"experiment-blob"}>
+                            <span>
+                                MLC-1051
+                                <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
+                            </span>
+                        </div>
+                        <div onClick={()=>navigate("/mlc-1052")} className={"experiment-blob"}>
+                            <span>
+                                MLC-1052
+                                <img src={Arrow} alt={"Arrow Icon"} className={"arrow"}/>
+                            </span>
+                        </div>
                   </div>
               </div>
               <div className={"experiments-section"}>
